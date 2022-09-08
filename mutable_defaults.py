@@ -6,7 +6,9 @@ __version__ = '1.2.0'
 
 
 mutable_types = [
-    ast.Call,
+# Disabled for now. A function call as a default has some issues but can be valid. Additionally, checking if the return
+# type is mutable is probably a reasonable more scoped determination.
+#    ast.Call,
     ast.Dict,
     ast.List,
     ast.Set,
